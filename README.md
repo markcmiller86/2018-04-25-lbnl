@@ -238,9 +238,6 @@ You should not have them use the workshop website repository because:
 You can call this repository whatever you like,
 and add whatever content you need to it.
 
-## Foo Test
-<img class="navbar-logo" src="{{ page.root }}/assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />
-
 ## Getting and Giving Help
 
 We are committed to offering a pleasant setup experience for our learners and organizers.
