@@ -202,6 +202,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p>Ask your instructor about pre- and post-workshop Survey details.</p>
 {% endif %}
 
+<h2><a href="http://pad.software-carpentry.org/2018-04-25-lbnl">Ether-Pad</a></h2>
 
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
