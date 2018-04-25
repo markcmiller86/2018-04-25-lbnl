@@ -56,6 +56,8 @@ Shell Lessons
     - Shell has places to look for them (path)
     - ls-F (doesn't work. Why?)
     - spaces are important
+    - part of becoming compentent with the shell is
+      learning these command names
   * Compare to GUI/Finder
     - touch foo.txt
     - mkdir bar
@@ -167,12 +169,18 @@ Shell Lessons
   * head -n 3 sorted-lengths.txt
   * Pipes | instead of >
   * wc -l *.pdb | sort -n | head -n 2 
-  * Exercise
-
-
-
-
-
-
-
+  * Redirecting input
+  * cd data-shell
+  * wc -l notes.txt
+  * wc -l < notes.txt
+  * wc -l (interactive input)
+  * New command: uniq (UNIQue)
+  * uniq (only removes duplicates next to each other)
+  * uniq data/salmon.txt
+  * Exercise: how might you use sort and pipe to get list of uniq names?
+    - what if wanted to know only how many uniq names?
+  * New command: cut
+  * cat data/animals.txt
+  * cat data/animals.txt | cut -d, -f2
+  * Exercise: pipe reading comprehension
 
