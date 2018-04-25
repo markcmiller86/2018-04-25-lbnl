@@ -1,0 +1,178 @@
+* WiFi info
+* Silence laptop notifications, turn off all other apps
+* Introductions
+  - Kim Durante
+    - Is the Metadata Librarian for Geospatial and Scientific Data at Stanford University Libraries.
+      Kim was involved with creation of the open-source software GeoBlacklight - an online discovery
+      platform for maps and geospatial data. She also assists researchers in the scientific disciplines
+      with the packaging and publishing of data in our institutional repository. 
+  - Mark Miller
+    - I have been working in HPC visualization and data analysis applications at LLNL for 25+ years.
+      Areas of expertise include scientific data models, scalable I/O, scientific software quality
+      engineering.
+  - Anyone else?
+* Pairing off or identify a back-up
+* Post-it Notes
+  - Blue (I'm feeling blue) (sad face)
+  - Pink (happy face w/wink)
+* Ether-pad link
+  - on board
+  - on web page
+  - enter your "handle"
+  - chat will be useful
+* outline of the two day training
+  - breaks = 15 mins
+  - lunch = 1 hour
+* a lot to cover
+* encourage interactivity
+* disclaimer regarding helpers
+* Setup steps you should have completed
+  - install software (esp. important for Windows shell)
+* Some short-cuts are hard-coded into my fingers.
+  I will try my best to avoid doing that but if you 
+  observe me type something that doesn't make sense
+  (I mean other than typing errors), please feel free
+  to call me on it.
+
+
+Shell Lessons
+* Setup Tab
+  - Download / Unzip data-shell.zip to Desktop
+
+* Be sure to go into bash!!!
+* Set zoom on browser
+
+* Intro Episode
+  * Description
+    - Read a command that is typed
+    - Execute the command
+    - Print results
+  * Example
+    - prompt
+    - ls
+    - ls -F
+    - ls -F Desktop
+  * Every "command" is actually the name of a program
+    - Shell has places to look for them (path)
+    - ls-F (doesn't work. Why?)
+    - spaces are important
+  * Compare to GUI/Finder
+    - touch foo.txt
+    - mkdir bar
+    - use "directory" and "folder" synonymously
+
+* Navigating Files and Directories Episode
+  * Getting help
+    - ls --help
+      - --help works on most commands
+    - man ls
+      - man works on most commands
+  * Exercises
+    - ls -l Desktop and ls -lh Desktop
+    - ls -t Desktop
+  * Ok, learned a lot about ls command.
+  * New command: pwd (Print Working Directory)
+  * Just like GUI displays whatever "current" folder you are in...
+  * What does slash mean?
+    - at beginning...it refers to "root" directory/folder
+  * What is pwd telling us? The sequence of directories (folders)
+    leading to where we are (how does this look in GUI)
+  * Picture of directory hierarchy
+  * ls -F Desktop (shows data-shell/ dir)
+  * ls -F Desktop/data-shell
+  * What if wanted to list what is inside of data dir?
+  * ls -F Desktop/data-shell/molecules
+  * A lot of typing
+  * Can we just "move" ourselves into data-shell dir?
+  * New command: cd (Change Directory)
+  * cd Desktop
+  * ls
+  * cd data-shell
+  * ls
+  * cd data
+  * pwd
+  * ls -F
+  * Do it through GUI (last time)
+  * We've used cd to "descend" into folders...how do we back out?
+  * cd ..
+  * pwd
+  * .. is special/magic file in the file system (a link to parent dir)
+  * ls -F -a (-a is a new flag meaning *all*, even ordinarily hidden things)
+  * What happens if you type just cd? Try it. What happens? How can you tell?
+  * Ok, back into data folder, cd Desktop/data-shell/data
+  * Two more short-cuts, ~ and - . Can you determine what they do?
+  * Exercise...Absolute vs. Relative paths
+  * Exercise...Relative path resolution
+  * Tab completion
+
+* Working with files and directories
+  * Get into data-shell
+  * ls -F
+  * New command: mkdir (MaKe DIRectory)
+  * mkdir thesis
+  * ls -F
+  * Hints about naming files and directories
+  * cd thesis
+  * vi draft.txt
+    - It's not "publish or perish" anymore,
+      it's "share and thrive".
+  * ls -F
+  * New command: touch
+  * touch my_file.txt 
+  * New command: rm (ReMove)
+  * rm my_file.txt
+  * cd ..
+  * rm thesis (what happened?)
+  * rm -r thesis (-r ==> recursive BE VERY CAREFUL!!!. There is no "Trash" in shell)
+  * rm -i -r (-i means interactively prompt for removal)
+  * New command: mv (MoVe)
+  * mv thesis/draft.txt thesis/quotes.txt
+  * ls thesis
+  * mv thesis/quotes.txt . (what will this do)
+  * New command: cp (CoPy)
+  * cp quotes.txt thesis/quotations.txt
+  * ls quotes.txt thesis/quotations.txt
+  * rm quotes.txt
+  * ls quotes.txt thesis/quotations.txt
+  * Exercise: Renaming files
+
+* Shell Pipes and Filters
+  * get into the 'molecules' directory of the data-shell
+  * ls
+  * New command: wc (Word Count)
+  * wc *.pdb
+  * Wildcard character *
+    - Matches any string of chars
+    - ? matches any single char
+  * Exercise: Using wildcards
+  * wc -l (lines) -w (words) -c (chars)
+  * wc -l *.pdb > lengths.txt
+  * What happened...> output that ordinarily go to screen went to file named lenghts.txt
+  * New command: cat (CATenate)
+  * cat lengths.txt
+  * New command: sort
+  * sort lengths.txt
+  * sort -n lengths.txt
+  * Exercise: enter command to create a new file sorted-lengths.txt
+  * > vs >>
+    - echo hello
+    - echo hello > foo.out
+    - echo world > foo.out
+    - cat foo.out
+    - echo hello > foo.out
+    - echo world >> foo.out
+    - cat foo.out
+  * New command: head (HEAD of file)
+  * head -n 1 sorted-lengths.txt
+  * head -n 3 sorted-lengths.txt
+  * Pipes | instead of >
+  * wc -l *.pdb | sort -n | head -n 2 
+  * Exercise
+
+
+
+
+
+
+
+
