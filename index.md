@@ -13,7 +13,7 @@ enddate: 2018-04-26        # machine-readable end date for the workshop in YYYY-
 instructor: ["Mark Miller", "Kimberly Durante"]
 helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["ecscharfstein@lbl.gov", "awiedlea@lbl.gov", "miller86@llnl.gov", "kdurante@stanford.edu"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:https://pad.carpentries.org/sul-2018-10-10  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
